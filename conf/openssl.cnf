@@ -1,0 +1,13 @@
+[CA]
+basicConstraints=critical,CA:TRUE,pathlen:0
+keyUsage=digitalSignature,keyCertSign,cRLSign
+
+[Server]
+basicConstraints=CA:FALSE
+keyUsage=digitalSignature,dataEncipherment
+extendedKeyUsage=serverAuth
+
+[Client]
+basicConstraints=CA:FALSE
+keyUsage=digitalSignature,dataEncipherment
+extendedKeyUsage=clientAuth
